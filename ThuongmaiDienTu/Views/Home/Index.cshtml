@@ -1,0 +1,187 @@
+﻿
+@{
+    ViewBag.Title = "Học Viện Quản lý Giáo Dục - Bộ Giáo Dục Và Đào Tạo";
+    Layout = "~/Views/Shared/MyLayout.cshtml";
+}
+
+<div class="main">
+    <div class="main__title-notice">
+        <h3>thông báo</h3>
+    </div>
+    <div class="main__content">
+        <div class="main__content-notice">
+            <a href="#">
+                <img src="https://vinuni.edu.vn/wp-content/uploads/2022/10/Ong-Samuel-Ang-Giam-doc-khu-vuc-Chau-A-Thai-Binh-Duong-To-chuc-kiem-dinh-Quacquarelli-Symonds-trao-tang-chung-nhan-dat-QS-4-sao-tong-the-cho-Truong-DH-VinUni-660x410.jpg" alt="Thông báo V/v bảo vệ Luận văn Thạc sĩ của học viên khóa 21 (2019-2021) ngành Quản lý giáo dục" 
+                     title="Thông Báo V/V Bảo Vệ Luận Văn Thạc Sĩ Của Học Viên Khóa 21 (2019-2021) Ngành Quản Lý Giáo Dục"/>
+            </a>
+                @Html.ActionLink("Thông báo V/v bảo vệ Luận văn Thạc sĩ của học viên khóa 21 (2019-2021) ngành Quản lý giáo dục", "", "Home", new { @class = "main__link-index" })
+        </div>
+        <div class="main__content-notice">
+            <a href="#">
+                <img src="https://vinuni.edu.vn/wp-content/uploads/2022/09/306970651_10225823579769507_8781100131830648826_n-660x410.jpg" alt="Học viện quản lý giáo dục là trường Đại học trẻ nhất khu vực Châu Á - Thái Bình Dương" title="Học Viện Quản Lý Giáo Dục Là Trường Đại Học Trẻ Nhất Khu Vực Châu Á - Thái Bình Dương"/>
+            </a>
+                @Html.ActionLink("Học Viện Quản Lý giáo dục là trường Đại học trẻ nhất khu vực Châu Á - Thái Bình Dương", "", "Home", new { @class = "main__link-index" })
+        </div>
+        <div class="main__content-right">
+            <h2>tin tức</h2>
+            <hr />
+            @Html.ActionLink("Lễ trao Bằng Tốt nghiệp Đại học Chính quy năm 2022", "", "Home", new { @class = "main__content-index" })
+
+            <p>
+                Ngày 09/8/2022, trong không khí của mùa thu Hà Nội và hướng tới kỉ niệm 77 năm Cách mạng tháng 8 thành công, Học viện Quản lý [...]
+            </p>
+            <hr style="margin: 21.28px auto" />
+            @Html.ActionLink("'Mùa hè xanh' của Sinh viên Học viện Quản lý giáo dục", "", "Home", new { @class = "main__content-index" })
+            <p>
+                Với tinh thần “Đâu cần thanh niên có, việc gì khó có thanh niên”, Đội sinh viên tình nguyện Học viện Quản lý giáo dục [...]
+            </p>
+            <hr style="margin: 21.28px auto" />
+            @Html.ActionLink("Hội thảo Khoa học 'Kiểm tra, đánh giá giảng dạy'", "", "Home", new { @class = "main__content-index" })
+            <p>
+                Thực hiện kế hoạch hoạt động khoa học và công nghệ năm học 2021 - 2022, ngày 29/11/2021, Khoa Ngoại ngữ [...]
+            </p>
+            @Html.ActionLink("xem thêm", "", "Home", new { @class = "main__content-index" })
+
+        </div>
+    </div>
+
+    <div class="main__about">
+        <div class="main__about-left">
+            <a href="#">
+                <img src="https://vinuni.edu.vn/wp-content/uploads/2020/11/D8H9035-e1604563728772-768x478.jpg" alt="" />
+            </a>
+            <a href="#">
+                <h3>về học viện quản lý giáo dục</h3>
+            </a>
+            <p>
+                Học Viện Quản Lý Giáo Dục mong muốn trở thành một trường đại học đẳng cấp thế giới dựa trên các tiêu chuẩn quốc tế cao nhất về nghiên cứu và giảng dạy, với một môi trường học tập thân mật và chuyên sâu cho sinh viên, đội ngũ giảng viên có thành tích cao và cam kết trở thành công dân toàn cầu.
+            </p>
+            <p class="main__about-info">
+                <a href="#" class="main__about-left-link">
+                    <span class="xemthem">Xem thêm</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                    </svg>
+                </a>
+            </p>
+        </div>
+        <div class="main__about-right">
+            <a href="#">
+                <img src="https://vinuni.edu.vn/wp-content/uploads/2020/11/D8H9337-e1604563763751-768x478.jpg" alt="" />
+            </a>
+            <a href="#">
+                <h3>NaemUniQ</h3>
+            </a>
+            <p>
+                <ul class="main__about-right-list">
+                    <li>
+                        <strong>Tự do trở thành:</strong>
+                        <span>Các khóa học, dự án và thực tập có tính liên ngành và được thiết kế cho bạn</span>
+                    </li>
+                    <li>
+                        <strong>Bối cảnh địa phương & Triển vọng toàn cầu:</strong>
+                        <span>Quan hệ đối tác trong ngành và học thuật ở Việt Nam và trên thế giới, nơi bạn sẽ học hỏi từ các chuyên gia trong lĩnh vực của mình</span>
+                    </li>
+                </ul>
+            </p>
+            <p class="main__about-info">
+                <a href="#" class="main__about-right-link">
+                    <span class="xemthem">Xem thêm</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                    </svg>
+                </a>
+            </p>
+        </div>
+    </div>
+</div>
+
+    <div class="teacher__title">
+        <h3>giảng viên ưu tú</h3>
+    </div>
+
+<div class="container">
+    <div class="box">
+        <img src="https://vinuni.edu.vn/wp-content/uploads/2020/11/Nguyen-Anh-Ngoc-e1605179709966-768x567.jpg">
+        <span>
+            Nguyễn Anh Ngọc
+        </span>
+    </div>
+    <div class="box">
+        <img src="https://vinuni.edu.vn/wp-content/uploads/2020/06/Nguyen-Son-Tung-scaled-e1591100030917-768x567.jpg">
+        <span>
+            Nguyễn Sơn Tùng
+        </span>
+    </div>
+    <div class="box">
+        <img src="https://vinuni.edu.vn/wp-content/uploads/2021/02/RohitVerma-scaled-e1613972291622-768x569.jpg">
+        <span>
+            Rohhit Verman
+        </span>
+    </div>
+    <div class="box">
+        <img src="https://vinuni.edu.vn/wp-content/uploads/2020/07/Profile_2020-scaled-e1610681807966-768x568.jpg">
+        <span>Minh Đỗ</span>
+    </div>
+    <div class="box">
+        <img src="https://vinuni.edu.vn/wp-content/uploads/2021/08/Laurent-Profile-Picture-540x400.jpg">
+        <span>Laurent EI Ghaoui</span>
+    </div>
+    <div class="box">
+        <img src="https://vinuni.edu.vn/wp-content/uploads/2020/06/Hanh-Bui-scaled-e1593013267594-768x567.jpg">
+        <span>Hạnh Bùi</span>
+    </div>
+</div>
+
+<div class="group">
+<div class="strategy">
+    <h3>
+        Cộng tác viên chiến lược của chúng tôi
+    </h3>
+    <p style="width: 620px">
+        Ngày 3/4/2018, Tập đoàn Vingroup đã chính thức ký kết hợp tác với hai trường Đại học hàng đầu thế giới: Đại học Cornell và Đại học Pennsylvania của Hoa Kỳ. Sự hợp tác thể hiện cam kết lâu dài của Vingroup trong việc tạo ra một trường đại học đẳng cấp quốc tế thực sự, sẽ là bước đột phá trong giáo dục đại học tại Việt Nam.
+    </p>
+</div>
+    <div class="strategy__collaborators">
+        <div class="strategy__collaborators-group">
+            <div class="strategy__collaborators-left">
+                <img src="https://vinuni.edu.vn/wp-content/uploads/2020/05/our-strategic-collaborators-1.png" alt="" />
+            </div>
+            <div class="strategy__collaborators-right">
+                <img src="https://vinuni.edu.vn/wp-content/uploads/2020/05/our-strategic-collaborators-2.png" alt="" />
+            </div>
+        </div>
+        <div class="strategy__collaborators-btn">
+            <button>xem thêm</button>
+        </div>
+    </div>
+</div>
+
+<div class="partner">
+    <div class="partner__title">
+        <h3>đối tác đồng hành cùng chúng tôi</h3><br />
+    </div>
+    <div class="partner__group">
+        <div class="partner__group-items">
+            <a href="#"><img src="https://www.vanlanguni.edu.vn/images/2020/betu1.png" alt="#" /></a>
+        </div>
+        <div class="partner__group-items">
+            <a href="#"><img src="https://www.vanlanguni.edu.vn/images/2020/6.png" alt="#" /></a>
+        </div>
+        <div class="partner__group-items">
+            <a href="#"><img src="https://www.vanlanguni.edu.vn/images/2020/5.png" alt="#" /></a>
+        </div>
+        <div class="partner__group-items">
+            <a href="#"><img src="https://www.vanlanguni.edu.vn/images/2020/5-01.png" alt="#" /></a>
+        </div>
+        <div class="partner__group-items">
+            <a href="#"><img src="https://www.vanlanguni.edu.vn/images/2020/3.png" alt="#" /></a>
+        </div>
+        <div class="partner__group-items">
+            <a href="#"><img src="https://www.vanlanguni.edu.vn/images/2020/2.png" alt="#" /></a>
+        </div>
+        <div class="partner__group-items">
+            <a href="#"><img src="https://www.vanlanguni.edu.vn/images/2020/4.png" alt="#" /></a>
+        </div>
+    </div>
+</div>

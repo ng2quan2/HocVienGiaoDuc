@@ -1,0 +1,99 @@
+﻿@model IEnumerable<ThuongmaiDienTu.Models.GiangVien>
+
+@{
+    ViewBag.Title = "GiangVien";
+    Layout = "~/Views/Shared/MyLayout.cshtml";
+    <link href="~/Public/css/MyStyle.css" rel="stylesheet" />
+}
+
+<div style="margin: 40px;">
+    <h2>Giảng Viên</h2>
+    <div style="display: flex; justify-content: space-between">
+        <p>@Html.ActionLink("Tạo mới", "Create")</p>
+        <p>
+        @Html.ActionLink("Đàm phán với quản trị viên", "Chat")
+    </div>
+    <table border="1" class="table">
+        <tr>
+            <th style="padding-bottom: 18px; width: 200px;">
+                @Html.DisplayNameFor(model => model.TenGiangVien)
+            </th>
+            <th style="padding-bottom: 18px; width: 200px;">
+                @Html.DisplayNameFor(model => model.NgaySinh)
+            </th>
+            <th style="padding-bottom: 18px; width: 200px;">
+                @Html.DisplayNameFor(model => model.IDBoMon)
+            </th>
+            <th style="padding-bottom: 18px; width: 200px;">
+                @Html.DisplayNameFor(model => model.DiaChi)
+            </th>
+            <th style="padding-bottom: 18px; width: 200px;">
+                @Html.DisplayNameFor(model => model.SoDienThoai)
+            </th>
+            <th style="padding-bottom: 18px; width: 200px;">
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th style="padding-bottom: 18px; width: 200px;">
+                @Html.DisplayNameFor(model => model.HocVi)
+            </th>
+            <th style="padding-bottom: 18px; width: 200px;">
+                @Html.DisplayNameFor(model => model.TenDangNhap)
+            </th>
+            <th style="padding-bottom: 18px; width: 200px;">
+                @Html.DisplayNameFor(model => model.MatKhau)
+            </th>
+            <th style="padding-bottom: 18px; width: 200px;">
+                @Html.DisplayNameFor(model => model.IDKieuNguoiDung)
+            </th>
+            <th style="padding-bottom: 18px; width: 200px;">
+                @Html.DisplayNameFor(model => model.ChucVu)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td style="padding-bottom: 18px; width: 200px;text-align: center">
+                    @Html.DisplayFor(modelItem => item.TenGiangVien)
+                </td>
+                <td style="padding-bottom: 18px; width: 200px; text-align: center">
+                    @Html.DisplayFor(modelItem => item.NgaySinh)
+                </td>
+                <td style="padding-bottom: 18px; width: 200px; text-align: center">
+                    @Html.DisplayFor(modelItem => item.IDBoMon)
+                </td>
+                <td style="padding-bottom: 18px; width: 200px; text-align: center">
+                    @Html.DisplayFor(modelItem => item.DiaChi)
+                </td>
+                <td style="padding-bottom: 18px; width: 200px; text-align: center">
+                    @Html.DisplayFor(modelItem => item.SoDienThoai)
+                </td>
+                <td style="padding-bottom: 18px; width: 200px; text-align: center">
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td style="padding-bottom: 18px; width: 200px; text-align: center">
+                    @Html.DisplayFor(modelItem => item.HocVi)
+                </td>
+                <td style="padding-bottom: 18px; width: 200px; text-align: center">
+                    @Html.DisplayFor(modelItem => item.TenDangNhap)
+                </td>
+                <td style="padding-bottom: 18px; width: 200px; text-align: center">
+                    @Html.DisplayFor(modelItem => item.MatKhau)
+                </td>
+                <td style="padding-bottom: 18px; width: 200px; text-align: center">
+                    @Html.DisplayFor(modelItem => item.IDKieuNguoiDung)
+                </td>
+                <td style="padding-bottom: 18px; width: 200px; text-align: center">
+                    @Html.DisplayFor(modelItem => item.ChucVu)
+                </td>
+                <td style="padding-bottom: 18px; width: 200px; text-align: center">
+                    @Html.ActionLink("Edit", "Edit", new { MaGV = item.MaGV })
+                    @Html.ActionLink("Details", "Details", new { MaGV = item.MaGV })
+                    @Html.ActionLink("Delete", "Delete", new { MaGV = item.MaGV })
+                </td>
+            </tr>
+        }
+
+    </table>
+</div>
